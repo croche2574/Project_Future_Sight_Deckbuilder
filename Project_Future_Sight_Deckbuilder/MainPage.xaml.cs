@@ -26,5 +26,15 @@ namespace Project_Future_Sight_Deckbuilder
         {
             this.InitializeComponent();
         }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
