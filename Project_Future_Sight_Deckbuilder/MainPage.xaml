@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <RelativePanel>
@@ -25,6 +25,14 @@
                     Content="&#xE0C4;"
                     FontSize="30"
                     Click="BackButton_Click"/>
+
+            <Button x:Name="Settings"
+                    RelativePanel.AlignRightWithPanel="True"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="&#xE115;"
+                    FontSize="30"
+                    Click="Settings_Click"/>
+
 
         </RelativePanel>
         <SplitView x:Name="Splitview" 

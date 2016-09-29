@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,6 +27,8 @@ namespace Project_Future_Sight_Deckbuilder
         {
             this.InitializeComponent();
 
+
+
             Home.IsSelected = true;
             BackButton.Visibility = Visibility.Collapsed;
         }
@@ -42,6 +45,12 @@ namespace Project_Future_Sight_Deckbuilder
                 MenuFrame.GoBack();
                 Home.IsSelected = true;
             }
+        }
+
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            BackButton.Visibility = Visibility.Collapsed;
+            MenuFrame.Navigate(typeof(Settings));
         }
 
         private void MenuList_SelectionChanged(object sender, SelectionChangedEventArgs e)
